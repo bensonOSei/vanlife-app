@@ -1,4 +1,4 @@
-import { VanCard } from "../Components/Cards/VanCard"
+import { VanCard } from "../../Components/Cards/VanCard"
 
 export const Vans = () => {
   return (
