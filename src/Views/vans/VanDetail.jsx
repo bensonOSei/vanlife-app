@@ -1,6 +1,6 @@
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { VanLabel } from "../Components/Elements/VanLabel";
+import { VanLabel } from "../../Components/Elements/VanLabel";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -14,7 +14,7 @@ export const VanDetail = () => {
 			.then((data) => setVan(data.vans));
 	}, [id]);
 	return (
-		<div className="px-4">
+		<div className="px-4 sm:h-screen ">
 			{van.length !== 0 ? (
 				<>
 					<div>

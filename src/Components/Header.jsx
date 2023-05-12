@@ -1,24 +1,41 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
 	return (
 		<header className="flex flex-row justify-between items-center px-3 py-5">
-			<Link
+			<NavLink
 				to="/"
 				className="font-extrabold text-2xl">
 				#VANLIFE
-			</Link>
+			</NavLink>
 			<nav className="flex gap-6">
-				<Link
+				<NavLink
+					to="/host"
+					className={({ isActive }) => {
+						return isActive
+							? "underline font-bold"
+							: "hover:underline font-semibold text-slate-600";
+					}}>
+					Host
+				</NavLink>
+				<NavLink
 					to="/about"
-					className="hover:underline">
+					className={({ isActive }) => {
+						return isActive
+							? "underline font-bold"
+							: "hover:underline font-semibold text-slate-600";
+					}}>
 					About
-				</Link>
-				<Link
+				</NavLink>
+				<NavLink
 					to="/vans"
-					className="hover:underline">
+					className={({ isActive }) => {
+						return isActive
+							? "underline font-bold"
+							: "hover:underline font-semibold text-slate-600";
+					}}>
 					Vans
-				</Link>
+				</NavLink>
 			</nav>
 		</header>
 	);

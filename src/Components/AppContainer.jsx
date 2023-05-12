@@ -2,7 +2,7 @@
 
 export const AppContainer = ({ children }) => {
 	return (
-		<div className="h-full m-auto max-w-7xl flex flex-col justify-between">
+		<div className="m-auto max-w-7xl flex flex-col justify-between">
 			{children}
 		</div>
 	);

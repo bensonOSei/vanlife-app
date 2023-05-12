@@ -3,7 +3,7 @@ import aboutImg from "../assets/about-hero.png";
 
 export const About = () => {
 	return (
-		<div className="">
+		<div className="sm:h-screen">
 			<div className="bg-slate-800 w-full h-72 mb-7">
 				<img src={aboutImg} alt="about hero" className="w-full h-full object-cover" />
 			</div>
