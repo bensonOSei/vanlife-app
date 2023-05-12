@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import homeImg from '../assets/home-hero.png';
 export const Home = () => {
 	return (
-		<div className="flex flex-row items-center justify-center h-full bg-slate-950 p-5 relative isolate">
+		<div className="h-screen flex flex-row items-center justify-center bg-slate-950 p-5 relative isolate">
 			<img src={homeImg} alt="home hero" className="absolute top-0 left-0 w-full h-full object-fill -z-10 opacity-50"/>
 			<div className="text-white">
 				<h1 className="text-2xl font-bold mb-3" >You got the travel plans, we got the travel vans.</h1>
